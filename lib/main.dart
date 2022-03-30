@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: SafeArea(
-        bottom: false,
+        // bottom: false,
         child: Container(
             alignment: Alignment.center,
             color: Colors.blue,
@@ -52,8 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
               children: List.generate(
                   100,
                   (index) => Container(
-                        padding: EdgeInsets.all(8.0),
-                        margin: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
+                        margin: const EdgeInsets.all(8.0),
                         height: 100,
                         color: Colors.red,
                       )),
